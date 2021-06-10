@@ -99,6 +99,26 @@ button:focus {
     color: #fff;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.buttons button:first-child {
+    background-color: #ddd;
+}
+
+.buttons button:last-child {
+    border: 1px solid #ddd;
+}
+
+.buttons>button {
+    width: 110px;
+}
+
 
 /* Headings */
 
@@ -128,17 +148,21 @@ button:focus {
 
 .article {
     margin-bottom: 2em;
+    display: flex;
+    border: 1px solid #ddd;
 }
 
 .article__image {
     object-fit: contain;
     width: 5rem;
+    margin: 10px;
 }
 
 .article__title {
     margin-bottom: 0.5em;
     font-size: 1rem;
     font-weight: 700;
+    margin: 10px;
 }
 
 .article__read-more a {
